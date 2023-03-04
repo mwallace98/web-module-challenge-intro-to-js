@@ -20,11 +20,11 @@ Do the following:
    HINT: no function required
 */
 
-let votingage = '18'
+const votingage = '18'
     if (votingage >= 18) {
-      console.log("True")
+      console.log("true");
     } else if (votingage < 18){
-      console.log("False")
+      console.log("False");
     }
 
 
@@ -40,16 +40,14 @@ Do the following:
    HINT: no function required
 */
 
-let firstthing = "1"
-let secondthing = " 2"
+let name = "Matt";
+let newname = "change";
 
-if (firstthing === secondthing){
-  let firstthing = "3"
-  console.log(firstthing)
+if (change = "change"){
+  newname = "Chris"
 }
 
-
-
+console.log(newname);
 
 
 /*
