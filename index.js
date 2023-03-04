@@ -20,7 +20,13 @@ Do the following:
    HINT: no function required
 */
 
-console.log("test")
+let votingage = '15'
+    if (votingage >= 18) {
+      console.log("True")
+    } else if (votingage < 18){
+      console.log("False")
+    }
+
 
 /*
 Task 1b - Values (not auto tested)
