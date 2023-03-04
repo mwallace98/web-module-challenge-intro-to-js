@@ -20,7 +20,7 @@ Do the following:
    HINT: no function required
 */
 
-let votingage = '15'
+let votingage = '18'
     if (votingage >= 18) {
       console.log("True")
     } else if (votingage < 18){
@@ -39,6 +39,14 @@ Do the following:
 
    HINT: no function required
 */
+
+let firstthing = "1"
+let secondthing = " 2"
+
+if (firstthing === secondthing){
+  let firstthing = "3"
+  console.log(firstthing)
+}
 
 
 
