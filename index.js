@@ -20,7 +20,7 @@ Do the following:
    HINT: no function required
 */
 
-
+console.log("test")
 
 /*
 Task 1b - Values (not auto tested)
