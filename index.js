@@ -43,11 +43,11 @@ Do the following:
 let name = "Matt";
 let newname = "change";
 
-if (change = "change"){
-  newname = "Chris"
+if (newname = "change"){
+   name = "Chis"
 }
 
-console.log(newname);
+console.log(name);
 
 
 /*
