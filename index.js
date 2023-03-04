@@ -44,7 +44,7 @@ let name = "Matt";
 let newname = "change";
 
 if (newname = "change"){
-   name = "Chis"
+   name = "Chris"
 }
 
 console.log(name);
@@ -61,7 +61,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+const a = "1999"
+console.log(Number(a));
 
 
 /*
