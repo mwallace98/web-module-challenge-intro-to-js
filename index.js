@@ -90,10 +90,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
 
+console.log(dogYears(24));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -142,9 +143,27 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age){
+  if (age >=1 && weight <=5){
+    return weight *0.05;
+  } else if (age >= 1 && weight >=6 && weight <= 10){
+    return weight *0.04;
+  } else if (age >=1 && weight >=11 && weight <= 15){
+    return weight *0.03;
+  } else if (age >= 1 && weight > 15){
+    return weight * 0.02;
+  } else if (age < 1 && age >= 0.583){
+    return weight * 0.04;
+  }else if (age < 0.583 && age >= 0.333){
+    return weight *0.05;
+  }else if (age < 0.333){
+    return weight * 0.1;
+  }else{
+    return "Please Try again"
+  }
 }
+
+console.log(hungryDog(4, 1));
 
 
 
@@ -169,10 +188,31 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-function game(user, computer){
-  /*add your code here*/
+let computer = Math.random()
+
+if (computer <= 0.34){
+  computer = "Rock";
+}else if (computer > 0.34 && computer < 0.66){
+  computer = "Scissors";
+}else if (computer > 0.66 && computer < 1){
+  computer = "Paper";
 }
 
+function game(user, computer){
+  if (user === computer){
+    return `it's a tie`;
+  }else if (user  === "Rock" && computer === "Scissors"){
+    return `you win!`;
+  }else if (user === "Scissors" && computer === "Paper"){
+    return `you win!`;
+  }else if (user === "Scissors" && computer === "Paper" ){
+    return `you win!`;
+  }else{
+    return `you lose!`;
+  }
+}
+
+console.log(game("Scissors" , computer));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
